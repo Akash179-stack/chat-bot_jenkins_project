@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y git \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy project files
-COPY app/ /app
+COPY . /app
 
 # Install only the minimal required Python packages
 RUN pip install --upgrade pip \
